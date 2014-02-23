@@ -1,0 +1,34 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="Train_TS.winAbout"
+	x:Name="Window"
+	Title="winAbout"
+	Width="400" Height="300" WindowStyle="None" Background="{x:Null}" WindowStartupLocation="CenterScreen" AllowsTransparency="True">
+
+	<Border BorderThickness="1" CornerRadius="15">
+		<Border.Background>
+			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+				<GradientStop Color="#FFE4FBE4" Offset="1"/>
+				<GradientStop Color="#FF15E418" Offset="0.254"/>
+			</LinearGradientBrush>
+		</Border.Background>
+
+		<Grid x:Name="LayoutRoot">
+			<Label Content="高速列车时空演化仿真系统 " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="74.632,39.109,0,0" FontSize="18.667" FontWeight="Bold" FontFamily="STCaiyun" Foreground="#FF0A3EC0" />
+			<Label Content="学校：兰州交通大学" HorizontalAlignment="Left" Margin="57.666,0,0,100.485" VerticalAlignment="Bottom"/>
+			<Label Content="邮箱：sonicrang@163.com" HorizontalAlignment="Left" Margin="57.666,0,0,66.648" VerticalAlignment="Bottom" />
+			<Label Content="作者：武让" HorizontalAlignment="Left" Margin="57.666,137.005,0,0" VerticalAlignment="Top" Height="25.673"/>
+			<Label Content="v1.0" HorizontalAlignment="Right" Margin="0,64.449,49.334,0" VerticalAlignment="Top"/>
+			<Button Height="45" HorizontalAlignment="Right" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="0,0,37.597,29.498" x:Name="btnAbout" VerticalAlignment="Bottom" Width="45" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Background="{x:Null}" Click="Exit">
+				<StackPanel Margin="-3,-2.998,-3,-3.002">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="/Train_TS;component/Images/Public.ico" />
+                    </StackPanel.Background>
+                </StackPanel>
+			</Button>
+			<Label Content="退出" HorizontalAlignment="Right" Margin="0,0,41.597,8" VerticalAlignment="Bottom"/>
+		</Grid>
+	</Border>
+</Window>
